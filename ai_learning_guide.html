@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Belajar AI Setahun Penuh</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 300;
+        }
+        
+        .header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: #218838;
+        }
+        
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            color: #495057;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #667eea;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #333;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .quarter {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .month {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .example {
+            background: #e7f3ff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .resources {
+            background: #f0f8f0;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .daily-schedule {
+            background: #fff3cd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .toc h3 {
+            margin-top: 0;
+            color: #495057;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .toc li {
+            margin: 8px 0;
+        }
+        
+        .toc a {
+            display: block;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .toc a:hover {
+            background: #e9ecef;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🤖 Panduan Belajar AI Setahun Penuh</h1>
+        <p>Dari Nol Hingga Mahir - Panduan Komprehensif Artificial Intelligence</p>
+        <a href="/download" class="download-btn">📥 Download PDF</a>
+    </div>
+
+    <div class="toc">
+        <h3>📚 Daftar Isi</h3>
+        <ul>
+            <li><a href="#kerangka">🎯 Kerangka Pembelajaran</a></li>
+            <li><a href="#kuartal1">📖 Kuartal 1: Fondasi Wajib Dikokohkan</a></li>
+            <li><a href="#kuartal2">🤖 Kuartal 2: Inti Machine Learning</a></li>
+            <li><a href="#kuartal3">🧠 Kuartal 3: Mendalami Deep Learning</a></li>
+            <li><a href="#kuartal4">🚀 Kuartal 4: Spesialisasi & Portofolio</a></li>
+            <li><a href="#daily">📅 Rencana Belajar Harian</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Panduan Belajar AI Setahun Penuh: Dari Nol Hingga Mahir</h1>
+
+        <p>Selamat datang di panduan komprehensif belajar Artificial Intelligence (AI) selama setahun penuh! Panduan ini dirancang khusus bagi Anda yang ingin memahami dunia AI dari dasar, bahkan tanpa latar belakang teknis yang kuat. Kami akan membimbing Anda langkah demi langkah, hari demi hari, dengan penjelasan yang mudah dicerna, contoh praktis, dan sumber belajar yang relevan.</p>
+
+        <p>AI adalah bidang yang luas dan terus berkembang. Dengan panduan ini, Anda akan membangun fondasi yang kokoh, menguasai algoritma inti Machine Learning dan Deep Learning, hingga mampu menciptakan proyek AI Anda sendiri. Setiap konsep akan dijelaskan dengan bahasa awam, dilengkapi dengan contoh soal, penyelesaian Python, serta rekomendasi sumber belajar dari berbagai platform.</p>
+
+        <p><strong>Mari kita mulai perjalanan belajar AI Anda!</strong></p>
+
+        <h2 id="kerangka">🎯 Kerangka Pembelajaran</h2>
+
+        <p>Panduan ini dibagi menjadi empat kuartal, masing-masing dengan fokus dan tujuan yang jelas:</p>
+
+        <div class="quarter">
+            <h3 id="kuartal1">📖 Kuartal 1 (Bulan 1-3): Fondasi Wajib Dikokohkan</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Membangun dasar logika, matematika, dan pemrograman yang kuat.</li>
+                <li><strong>Bulan 1:</strong> Logika Pemrograman & Python. Lupakan AI sejenak. Kuasai dasar Python (variabel, loop, fungsi, struktur data). Selesaikan banyak soal algoritma sederhana (misal di HackerRank).</li>
+                <li><strong>Bulan 2:</strong> Matematika untuk AI. Fokus pada intuisi, bukan hanya rumus.
+                    <ul>
+                        <li>Aljabar Linier: Vektor, matriks, transformasi (fundamental untuk data dan neural network).</li>
+                        <li>Kalkulus: Derivatif/turunan (inti dari optimisasi model/gradient descent).</li>
+                        <li>Probabilitas & Statistik: Distribusi, mean, median, standar deviasi (dasar untuk memahami data dan evaluasi model).</li>
+                    </ul>
+                </li>
+                <li><strong>Bulan 3:</strong> Python untuk Sains Data. Kuasai library wajib:
+                    <ul>
+                        <li>NumPy: Untuk komputasi numerik dan operasi matriks.</li>
+                        <li>Pandas: Untuk manipulasi dan analisis data tabular (CSV, Excel).</li>
+                        <li>Matplotlib & Seaborn: Untuk visualisasi data.</li>
+                    </ul>
+                </li>
+                <li><strong>🎯 Proyek Kuartal 1:</strong> Lakukan analisis data eksplorasi (EDA) pada dataset publik (misal: data Titanic atau Iris).</li>
+            </ul>
+        </div>
+
+        <div class="quarter">
+            <h3 id="kuartal2">🤖 Kuartal 2 (Bulan 4-6): Inti Machine Learning (ML)</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Memahami dan mengimplementasikan algoritma ML fundamental.</li>
+                <li><strong>Bulan 4-5:</strong> Algoritma & Konsep ML.
+                    <ul>
+                        <li>Supervised Learning: Regresi Linier, Regresi Logistik, Decision Tree, SVM, K-Nearest Neighbors.</li>
+                        <li>Unsupervised Learning: K-Means Clustering, PCA (Principal Component Analysis).</li>
+                    </ul>
+                </li>
+                <li><strong>Bulan 6:</strong> Proses & Praktik ML. Pelajari alur kerja end-to-end: data cleaning, feature engineering, model training, validasi silang (cross-validation), dan metrik evaluasi (akurasi, presisi, recall, F1-score).</li>
+                <li><strong>🎯 Proyek Kuartal 2:</strong> Ikut kompetisi pemula di Kaggle. Coba beberapa algoritma untuk memprediksi sesuatu.</li>
+            </ul>
+        </div>
+
+        <div class="quarter">
+            <h3 id="kuartal3">🧠 Kuartal 3 (Bulan 7-9): Mendalami Deep Learning (DL)</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Menguasai Jaringan Saraf Tiruan (Neural Networks).</li>
+                <li><strong>Bulan 7:</strong> Fondasi Deep Learning. Pahami cara kerja Neural Network, backpropagation, fungsi aktivasi, dan optimizer. Kuasai salah satu framework: TensorFlow atau PyTorch (saya sarankan PyTorch karena lebih intuitif).</li>
+                <li><strong>Bulan 8:</strong> Arsitektur DL untuk Visi Komputer. Fokus pada Convolutional Neural Networks (CNN) untuk tugas klasifikasi gambar.</li>
+                <li><strong>Bulan 9:</strong> Arsitektur DL untuk Data Sekuensial. Pelajari Recurrent Neural Networks (RNN) & LSTM untuk analisis teks atau data deret waktu.</li>
+                <li><strong>🎯 Proyek Kuartal 3:</strong> Bangun model klasifikasi gambar (misal: anjing vs kucing) dan model analisis sentimen sederhana.</li>
+            </ul>
+        </div>
+
+        <div class="quarter">
+            <h3 id="kuartal4">🚀 Kuartal 4 (Bulan 10-12): Spesialisasi & Portofolio Juara</h3>
+            <ul>
+                <li><strong>Tujuan:</strong> Mengeksplorasi topik lanjutan dan membangun portofolio yang menjual.</li>
+                <li><strong>Bulan 10:</strong> Topik Lanjutan. Pilih satu untuk didalami: Natural Language Processing (NLP) dengan Transformers, Generative AI (GANs, Diffusion Models), atau Reinforcement Learning.</li>
+                <li><strong>Bulan 11:</strong> MLOps. Pelajari dasar-dasar deployment model. Bagaimana mengubah model dari Jupyter Notebook menjadi aplikasi sederhana menggunakan Flask/FastAPI dan Docker.</li>
+                <li><strong>Bulan 12:</strong> Proyek Akhir & Branding. Ciptakan satu proyek unggulan yang kompleks dari awal hingga akhir. Dokumentasikan dengan baik di GitHub dan tulis artikel blog tentang prosesnya.</li>
+            </ul>
+        </div>
+
+        <div class="example">
+            <h3>🔑 Kunci Sukses:</h3>
+            <ul>
+                <li><strong>Konsisten:</strong> Belajar 1-2 jam setiap hari lebih baik daripada 10 jam di akhir pekan.</li>
+                <li><strong>Praktik > Teori:</strong> Jangan terjebak membaca buku/menonton video saja. Tulis kode setiap hari.</li>
+                <li><strong>Jangan Takut Error:</strong> Error adalah guru terbaikmu. Belajarlah membaca dokumentasi dan mencari solusi di Stack Overflow.</li>
+            </ul>
+        </div>
+
+        <h2 id="daily">📅 Rencana Belajar Harian (365 Hari)</h2>
+
+        <div class="daily-schedule">
+            <p><strong>Catatan:</strong> Panduan harian ini memberikan struktur yang jelas untuk setiap hari dalam setahun. Anda dapat menyesuaikan kecepatan sesuai dengan ketersediaan waktu dan kemampuan Anda. Yang terpenting adalah konsistensi!</p>
+        </div>
+
+        <div class="month">
+            <h3>📖 Bulan 1: Logika Pemrograman & Python (Hari 1-30)</h3>
+            
+            <h4>Minggu 1: Pengenalan Python & Dasar-dasar Pemrograman</h4>
+            <ul>
+                <li><strong>Hari 1-2:</strong> Pengenalan Python. Instalasi Python dan IDE (misal: VS Code atau PyCharm). Menulis program "Hello World!". Konsep dasar: variabel, tipe data (integer, float, string, boolean).</li>
+                <li><strong>Hari 3-4:</strong> Operator Aritmatika, Perbandingan, dan Logika. Latihan penggunaan operator.</li>
+                <li><strong>Hari 5-7:</strong> Struktur Kontrol: Percabangan (if, elif, else). Latihan membuat keputusan dalam kode.</li>
+            </ul>
+
+            <h4>Minggu 2: Perulangan & Fungsi</h4>
+            <ul>
+                <li><strong>Hari 8-10:</strong> Struktur Kontrol: Perulangan (for loop). Iterasi melalui list atau range.</li>
+                <li><strong>Hari 11-13:</strong> Struktur Kontrol: Perulangan (while loop). Kondisi berhenti perulangan.</li>
+                <li><strong>Hari 14-15:</strong> Pengenalan Fungsi. Mendefinisikan dan memanggil fungsi. Parameter dan nilai kembalian.</li>
+            </ul>
+
+            <h4>Minggu 3: Struktur Data Dasar</h4>
+            <ul>
+                <li><strong>Hari 16-18:</strong> List. Operasi dasar list (menambah, menghapus, mengakses elemen, slicing).</li>
+                <li><strong>Hari 19-20:</strong> Tuple. Perbedaan dengan list, kapan menggunakan tuple.</li>
+                <li><strong>Hari 21-23:</strong> Dictionary. Operasi dasar dictionary (menambah, mengakses, menghapus pasangan kunci-nilai).</li>
+                <li><strong>Hari 24-25:</strong> Set. Operasi dasar set (menambah, menghapus, operasi himpunan: union, intersection).</li>
+            </ul>
+
+            <h4>Minggu 4: Latihan & Persiapan Proyek</h4>
+            <ul>
+                <li><strong>Hari 26-28:</strong> Latihan Soal Algoritma Sederhana. Selesaikan beberapa soal di platform seperti HackerRank, LeetCode (level easy), atau Codewars.</li>
+                <li><strong>Hari 29-30:</strong> Review & Persiapan untuk Bulan 2. Pastikan Anda memahami semua konsep dasar. Identifikasi area yang masih lemah dan ulangi materi tersebut.</li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h4>📚 Sumber Belajar Bulan 1:</h4>
+            <ul>
+                <li><strong>Free Course:</strong> Dicoding - Belajar Dasar Pemrograman Python</li>
+                <li><strong>YouTube:</strong> Web Programming UNPAS - Tutorial Python Dasar</li>
+                <li><strong>Komunitas:</strong> Telegram Group - Python Indonesia</li>
+                <li><strong>Platform Latihan:</strong> HackerRank, LeetCode, Codewars</li>
+            </ul>
+        </div>
+
+        <p style="text-align: center; margin-top: 40px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
+            <strong>📖 Untuk panduan lengkap dengan detail setiap bulan, contoh kode, dan sumber belajar komprehensif, silakan download PDF lengkapnya!</strong>
+        </p>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="/download" class="download-btn" style="font-size: 1.2em; padding: 15px 30px;">
+                📥 Download Panduan Lengkap (PDF)
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px;">
+            <h3 style="margin: 0; color: white;">🎯 Selamat Belajar!</h3>
+            <p style="margin: 10px 0 0 0; opacity: 0.9;">Ingat, perjalanan AI adalah maraton, bukan sprint. Konsistensi adalah kunci!</p>
+            <p style="margin: 10px 0 0 0; font-style: italic;">- Manus AI</p>
+        </div>
+    </div>
+</body>
+</html>
+
